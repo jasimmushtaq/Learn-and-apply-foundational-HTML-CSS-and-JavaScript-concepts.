@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      color: #0077cc;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 400px;
+      height: 250px;    
+      object-fit: cover; 
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Webpage</h1>
+  <p>This is my first webpage built with HTML, CSS, and JavaScript.</p>
+
+  <img src="./anar.jpg" alt="Placeholder Image">
+
+  <p>Check out <a href="https://www.example.com" target="_blank">this website</a> for more info!</p>
+
+  <button id="alertBtn">Click Me!</button>
+
+  <script>
+    document.getElementById("alertBtn").addEventListener("click", function() {
+      alert("Hello! You clicked the button.");
+    });
+  </script>
+</body>
+</html>
